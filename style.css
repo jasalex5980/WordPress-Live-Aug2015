@@ -1,0 +1,469 @@
+/*
+Theme Name: Jazmine
+Version: 1.0
+Author: City Dock Design
+Author URI: http://www.citydockdesign.com
+*/
+
+
+@import url(//fonts.googleapis.com/css?family=Raleway:500,400,300|Open+Sans:400,400italic,700,700italic,300italic,300);
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/*---===<<< UNIVERSAL RESETS AND STYLES >>>===---*/
+* {margin: 0;padding: 0;}
+.clear {clear: both;display: block;height: 0;overflow: hidden;}
+a img {border: 0;} 
+a:focus {border: none;outline: none;}
+/*---===<<< CONTENT STYLES >>>===---*/
+body { background: #fff;}
+
+/*---=== TEXT STYLES ===---*/
+body,
+p, .Normal { color: #666;font-size: 14px; font-family: 'Open Sans', sans-serif;}
+p {margin: 0 0 15px 0;}
+p, li { line-height: 26px; }
+strong {}
+em {}
+hr {}
+ol, ul {margin-left: 20px;}
+.list-unstyled, .list-unstyled li {list-style-type: none;}
+
+.thumbnail .caption {clear: both;}
+.thumbnail .caption p {margin: 0; font-weight: bold;}
+/*---=== LINK STYLES ===---*/
+a{ color: #58595b; font-weight: bold;}
+a:hover { color: #005b82; text-decoration: none;}
+a.back-to-top {color: #ff9016;}
+/*---=== HEADING STYLES ===---*/
+h1, h2, h3, h4, h5, .Head {color: #58595b; font-family: 'Raleway', sans-serif; font-weight: 300;}
+h1 a:link, h1 a:visited, h1 a:active, 
+h2 a:link, h2 a:visited, h2 a:active, 
+h3 a:link, h3 a:visited, h3 a:active, 
+h4 a:link, h4 a:visited, h4 a:active, 
+h5 a:link, h5 a:visited, h5 a:active, 
+.Head a {color: #58595b; font-weight: 300;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, .Head a:hover {color: #ff9016;}
+
+.Head {border: 0; margin: 0; padding: 0;}
+
+h1, h1 .Head { font-size: 50px;}
+h2, h2 .Head { font-size: 26px; margin: 0 0 10px 0;}
+h3, h3 .Head { font-size: 22px; margin: 0 0 5px 0;}
+h4, h4 .Head { font-size: 22px; margin: 0 0 5px 0;}
+h5, h5 .Head { font-size: 14px; font-weight: normal; margin: 0 0 5px 0; color: #666;}
+.blank-list h5 {font-weight: bold; text-transform: none; font-size: 12px; color: #000;}
+h6 {}
+
+.header-pane h2 {font-size: 50px;}
+.header-pane h3 {font-size: 26px;}
+
+.btn {border: none; background: #005c83; color: #fff; padding: 20px 30px; font-weight: 300; font-size: 18px; letter-spacing: 1px;}
+.btn:hover {background: #fff; color: #005c83;}
+label {font-weight: normal;}
+
+.dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea {width: 100%;}
+
+/*---=== LIST STYLES ===---*/
+/*--- ORDERED ---*/
+ol {}
+ol li { padding: 0 0 4px 0;}
+ol li li {}
+ol li li li {}
+/*--- UNORDERED ---*/
+ul {}
+ul li { padding: 0 0 10px 0; list-style-type:disc;}
+ul li li {}
+ul li li li {}
+
+
+/*---===<<< SKIN SETUP >>>===---*/
+
+.mainContent {background: #ebebeb;}
+.contentFooter {background: #dcdcdc; overflow: hidden;}
+
+.main {padding: 20px 0 20px 15px;}
+.aside {padding: 20px 0; }
+
+/*---=== HEADER ===---*/
+.header {position: relative; z-index: 10; padding: 0 0 12px 0;}
+.header .logo {padding: 0 0 0 15px;}
+.header .logo img {margin: 20px auto 15px auto;}
+
+/*---=== SOCIAL ===---*/
+	
+
+/*---=== FOOTER ===---*/
+.copyrightWrap {background: #454343 url(images/bg-footer.gif) repeat-x top; padding: 60px 0 80px 0; text-align: center;color: #999;}
+	.copyrightWrap a,
+	.copyrightText {font-weight: normal; color: #cccccc;}
+	.copyrightWrap a:hover {color: #fff;}
+
+/*---=== CONTENT AREA ===---*/
+.mainContent {background: url(images/bg-content-bott.gif) repeat-x bottom;}
+.mainContent .inner {background: url(images/bg-content-top.gif) repeat-x top; padding: 60px 0;}
+
+
+/*---===<<< NAVIGATIONS >>>===---*/
+/*---=== MAIN NAVIGATION ===---*/
+.navbar-collapse {padding: 0;}
+.navbar { min-height: inherit; border: 0; border-radius: 0 0 0 0; margin: 0; padding-top: 21px;}
+.navbar .menu {float: right;}
+.navbar .menu, .navbar .menu li {list-style-type: none; margin: 0; padding: 0;}
+.navbar .menu > li {/*display: table-cell; */float: left; position: relative; padding: 0;}
+.navbar .menu > li > a {color: #000; font-weight: normal; padding: 10px 15px 17px 15px; border-radius: 0; text-align: center; font-style: normal; font-family: 'Raleway', sans-serif;}
+
+.navbar .menu > li.featured > a {font-weight: bold;}
+.navbar .menu > li > a:hover, 
+.navbar .menu > li > a:focus {background: none; color: #005c83; }
+.navbar .menu > li > a.active {background: none; color: #005c83; }
+.navbar .menu > li.featured {margin-right: -15px;}
+.navbar .menu > li.featured > a { color: #ff9016; }
+.navbar .menu > li.featured > a:hover {background: #ff9016; color: #fff;}
+.menu > li > a > img{height: 19px;}
+.navbar-inverse, .navbar-inverse .navbar-toggle {border: none;}
+.navbar-nav > li .dropdown-menu li a {border-left: none; left:auto; }
+.menu .open > a, .menu .open > a:hover, .menu .open > a:focus {border-color: #fff;}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.menu .sub-menu {display: none;}
+.menu li:hover .sub-menu {display: block;}
+
+.menu .sub-menu {position: absolute; left: -15px; top: 38px; background: #c2cad7;}
+.menu .sub-menu li { border-bottom: solid 1px #fff; white-space: nowrap;}
+.menu .sub-menu li  a {display: block; padding: 10px; font-weight: normal;}
+.menu .sub-menu li  a:hover {background :#005c83; color: #fff;}
+
+.navbar-header {text-align: center;}
+.navbar-toggle {background-color: #e5e5e5; float: none;}
+.navbar-toggle .icon-bar {background: #005c83;}
+
+.utility-nav, .utility-nav li {padding: 0; margin: 0; list-style-type: none;}
+.utility-nav {padding: 15px 0 0 0;}
+.utility-nav li {display: inline-block; padding: 0 12px;font-size: 11px; letter-spacing: .5px;}
+.utility-nav li a {color: #6d6e71; font-weight: normal; font-family: 'Raleway', sans-serif;}
+.utility-nav li a:hover {color: #005275;}
+.utility-nav li.social {padding: 0 0 0 5px;}
+.utility-nav li.social a {display: inline-block; float: left; width: 16px; height: 16px; background: url(images/social.gif) no-repeat;}
+.utility-nav li.social a.tw {background-position: -23px 0;}
+
+/* CART */
+.return-to-shop {display: none;}
+
+/*---===<<< MODULE STYLES GO BELOW HERE >>>===---*/
+
+.faq-list {margin: 20px 0 20px -5px;}
+
+.testimonialWrap { padding: 45px 0 30px 0;}
+.testimonialWrap p {font-size: 18px; line-height: 24px; font-style:italic; font-weight: 300; letter-spacing: .05em; color: #fff;}
+
+/*.blue {background: #008aad; padding: 45px 0 30px 0;}
+
+.orange {background: #ff9016; padding: 45px 0 30px 0;}*/
+
+
+.gradient-blue {border-top: solid 18px #2e6c87; background: #004e6f url(images/bg-dkblue-container.gif) repeat-x bottom; min-height: 366px; text-align: center; padding-top: 10%; padding-bottom: 10%;}
+.gradient-blue h2 {color: #fff; font-size: 42px;}
+
+/*.dark-blue {background: #054560; padding: 45px 0 30px 0;}*/
+
+
+.gradient-blue .Normal, .gradient-blue .Normal p, .dark-blue .Normal, .dark-blue .Normal p, .blue .Normal, .blue .Normal p, .orange .Normal, .orange .Normal p {color: #fff;}
+
+.slate-box { background: #eff2f3; padding: 20px;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; color: #fff;}
+.slate-box .inside {background: #535d64; padding: 20px;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+.slate-box .Normal, .slate-box .Head {color: #fff;}
+.slate-box h3 {margin: 0 0 25px 0;}
+.slate-box h4{margin-top: -20px; margin-bottom: 10px; font-size: 18px;}
+
+/*.padded {margin: 0 0 20px 0;}
+.paddedtop { margin: 20px 0 0 0; }*/
+
+/* HEADER BANNERS */
+
+.header-pane .inner {background: url(images/banner-bar.png) repeat-x bottom;min-height: 240px; padding: 30px 0;}
+.header-pane .bg-img {-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+/* what is it */
+/*.header-pane .what-is-jazmine {background: url(images/header-what-is.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .what-is-jazmine .inner {min-height: 330px;}*/
+.header-pane .what-is-jazmine p {width: 50%;}
+.header-pane .what-is-jazmine h2 {color: #005c83;}
+.header-pane .what-is-jazmine h2 span {font-size: 26px;}
+
+/* how it works */
+/*.header-pane .how-it-works {background: url(images/header-howitworks.jpg) no-repeat right top; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .how-it-works .inner {min-height: 330px;}*/
+.header-pane .how-it-works .textWrap {width: 50%; float: right}
+.header-pane .how-it-works h2 {color: #005c83;}
+
+
+/* about */
+/*.header-pane .about {background: url(images/header-about.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}*/
+.header-pane .about h2, .header-pane .blog h2 {color: #fff; text-align: center; margin-top: 5%; font-size: 80px;}
+
+/* contact */
+.header-pane .contact {background: url(images/header-contact.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .contact h2 {color: #fff; text-align: center; margin-top: 10%;}
+
+/* sign-up */
+.header-pane .sign-up {background: url(images/header-signup.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .sign-up .inner {min-height: 330px;}
+.header-pane .sign-up h2 {width: 50%; float: right; margin-top: 6%;}
+
+/* security */
+/*.header-pane .security {background: url(images/header-security.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}*/
+  
+/* pricing */
+.header-pane .pricing {background: url(images/header-pricing.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .pricing .inner {min-height: 330px;}
+.header-pane .pricing p {width: 50%;}
+
+/* home */
+.header-pane .home-campaign { background: transparent no-repeat center center; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.home-campaign1 { background-image: url(images/header-home-capaign1.jpg) !important; }
+.home-campaign2 { background-image: url(images/header-home-capaign2.jpg) !important; }
+.home-campaign3 { background-image: url(images/header-home-capaign3.jpg) !important; }
+.home-campaign4 { background-image: url(images/header-home-capaign4.jpg) !important; }
+.home-campaign5 { background-image: url(images/header-home-capaign5.jpg) !important; }
+.header-pane .home-campaign .inner {padding: 70px 0 220px 0;}
+.header-pane .home-campaign h2 {color: #005c83; font-size: 42px;} 
+.header-pane .home-campaign p {font-size: 18px; line-height: 28px;} 
+ 
+/* easy entry */
+/*.header-pane .easy-entry-series-sign-up {background: url(images/header-easyentry.jpg) no-repeat center bottom; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.header-pane .easy-entry-series-sign-up .inner {min-height: 330px;}*/
+.header-pane .easy-entry-series-sign-up p {width: 50%; color: #fff;} 
+.header-pane .easy-entry-series-sign-up h2 {color: #fff;}
+
+
+/* woo commerce account pages */
+
+
+.woocommerce-account .mainContent {border-bottom: solid 25px #a1d1f3; background: url(images/header-login.jpg) no-repeat center bottom; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.woocommerce-account .mainContent .inner {background: none; }
+.woocommerce-account .mainContent a, .woocommerce-account .mainContent p, .woocommerce-account .mainContent h2, .woocommerce-account .mainContent h3, .woocommerce-account .mainContent, .woocommerce-account .mainContent legend {color: #fff;}
+.woocommerce-account .mainContent .woocommerce-error a {color: #58595b;}
+.woocommerce-account mark, .woocommerce-account .mark {background: #ff9016; color: #fff;}
+
+.woocommerce-account .mainContent .myaccount_user {font-size: 18px; border-radius: 5px; background: rgba(255, 255, 255, .5); padding: 20px; color: #005c83;}
+.woocommerce-account .mainContent .myaccount_user a {color: #005c83;}
+.woocommerce-account .mainContent .myaccount_user a:hover {color: #ff9016;}
+/* log in */
+.woocommerce-account .mainContent .login-wrap {width: 500px; margin: 0 auto;}
+.woocommerce-account .mainContent .login-wrap p, .woocommerce-account .mainContent .login-wrap h2, .woocommerce-account .mainContent .login-wrap label {color: #fff;}
+.woocommerce-account .mainContent .login-wrap h2 {font-size: 50px;}
+.woocommerce-account .mainContent .login-wrap form.login {border: none; padding: 0;}
+.woocommerce-account .mainContent .login-wrap input.button {background: #ff9016; color: #fff; font-size: 18px; font-weight: 300; padding: 10px 20px; border: none; letter-spacing: 1px; border-radius: 0;}
+
+.woocommerce-account .mainContent .login-wrap .lost_password {display: none;}
+.woocommerce-account .mainContent .login-wrap .login-footer {border-top: solid 1px #ccc; padding: 20px 0 0 0;}
+.woocommerce-account .mainContent .login-wrap .login-footer a {display: inline-block; background: #fff; color: #333; font-size: 18px; font-weight: 300; padding: 10px 20px;}
+.woocommerce-account .mainContent .login-wrap .login-footer a:hover, .woocommerce-account .mainContent .login-wrap input.button:hover  {background: #333; color: #fff;}
+
+
+
+/* woocommerce forms */
+
+.mainContent .woocommerce form .form-row .input-text, .mainContent .woocommerce-page form .form-row .input-text {line-height: 2; color: #666; padding-left: 10px; padding-right: 10px;}
+
+.mainContent .woocommerce #respond input#submit.alt, 
+.mainContent .woocommerce a.button.alt, 
+.mainContent .woocommerce button.button.alt, 
+.mainContent .woocommerce input.button.alt {background: #ff9016; border-radius: 0; padding: 15px; font-weight: normal; font-size: 18px;}
+.mainContent .woocommerce #respond input#submit.alt:hover, 
+.mainContent .woocommerce a.button.alt:hover, 
+.mainContent .woocommerce button.button.alt:hover, 
+.mainContent .woocommerce input.button.alt:hover {background: #005275}
+
+/* woocommerce checkout */
+
+.woocommerce-checkout #customer_details {margin-bottom: 15px;}
+.woocommerce-checkout h3#order_review_heading {margin-top: 15px; padding-top: 30px; border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.woocommerce-cart table.cart .product-thumbnail {display: none;}
+.woocommerce-cart .woocommerce a.remove {font-size: 12px; display: inline; height: auto; width:auto;}
+.woocommerce-cart .woocommerce a.remove:hover {background: none; color: #000 !important;}
+
+.woocommerce-checkout .woocommerce .order_details {margin: 1.5em 0;}
+.woocommerce-checkout .woocommerce .order_details li {list-style-type: none;}
+
+/* homepage content */
+
+.quicklink {margin: 40px 0;}
+.quicklink .media {padding: 0 30px 0 0;}
+.quicklink .media-body {padding-left: 15px;}
+.quicklink a.more {float: right; font-style:italic;}
+.quicklink h4.media-heading {font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px;}
+.quicklink h5.media-subheading {font-style: italic; font-size: 18px;}
+
+.signup-box { text-align: center; background: #ecf2f2; padding: 10px;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+.signup-box .inside {background: #ECF2F2; padding: 20px;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+.signup-box .form-group {text-align: left;}
+.signup-box h4 {color: #333; font-size: 26px; padding: 0 15px; margin: 0 0 15px 0;}
+.signup-box label {color: #333; font-weight: normal; text-transform: uppercase; font-size: 12px;}
+.signup-box  .inside .btn {color: #fff; background-color: #FF9016; font-weight: normal;}
+.signup-box .inside  .btn:hover{color: #fff; background-color: #005275;}
+/*.signup-box .btn {border: none; background: #005c83; color: #fff; padding: 20px 30px; font-weight: 300; font-size: 18px; letter-spacing: 1px;}
+.signup-box .btn:hover {background: #fff; color: #005c83;}*/
+
+
+
+/* INTERIOR PAGES */
+
+.media-list .media:first-child {margin-top: 15px;}
+.media-list .media-heading {font-weight: 700; font-family: 'Open Sans', sans-serif;}
+
+.pricing-wrap {display: table; width: 100%; margin: 30px 0;}
+.pricing-wrap .pricing-cell {display: table-cell; width: 25%; background: #4588a5; border-right: solid 10px #fff; border-left: solid 10px #fff; position: relative;}
+.pricing-heading { text-align: center;}
+.pricing-heading h3 {margin: 0;padding: 10px;color: #fff; font-size: 26px;}
+.pricing-heading h3 span {display: block; font-weight: 600; font-size: 36px;}
+.pricing-heading.level-1 h3 {background: #a3d65c; }
+.pricing-heading.level-2 h3 {background: #14a4c8; }
+.pricing-heading.level-3 h3 {background: #ff9016; }
+.pricing-heading.level-4 h3 {background: #4f4d4b; }
+.pricing-body {padding: 20px 10px;}
+.pricing-body p, .pricing-body a {color: #fff; line-height: 25px;}
+.pricing-body p {margin: 0 0 45px 0;}
+.pricing-body a {text-transform: uppercase; position: absolute; left: 0; bottom: 0; width: 100%; background: #c3d9e2; text-align: center; padding: 10px 0; color: #4588a5; }
+.pricing-body a:hover {background: #4f4d4b; color: #fff;}
+@media (max-width: 990px) {
+.pricing-wrap, .pricing-wrap .pricing-cell {display: block;}
+.pricing-wrap .pricing-cell {width: 100%;}
+.pricing-body {text-align: center;}
+}
+
+.get-started {padding: 20px; background:#ECF2F2; margin: 0 auto 25px auto; width: 65%; color:#333; font-size:16px; text-align:center; overflow:hidden}
+.get-started a {display: inline-block; padding: 15px; font-size: 20px; color:#fff; font-weight:normal; background: #FF9016; white-space: nowrap;}
+.get-started a:hover {background: #005275; color: #fff;}
+.get-started div {display: table-cell; vertical-align:middle; float: none;}
+
+.how-it-works .img-responsive {margin-bottom: 30px;}
+
+
+/* CUSTOM CHANGES TO BOOTSTRAP
+-------------------------------------------------- */
+.container {/*max-width: 992px;*/}
+.btn { border-radius:0; padding: 10px 20px;   }
+a.btn-primary:link, 
+a.btn-primary:visited, 
+a.btn-primary:hover, 
+a.btn-primary:active { background-color: #FF9016; color: #fff;font-weight: 300;font-size: 18px;  }
+a.btn-primary:hover { background-color: #333; color: #fff; }
+
+a.btn-info:link, 
+a.btn-info:visited, 
+a.btn-info:hover, 
+a.btn-info:active { background-color: #fff; color: #333;font-weight: 300;font-size: 18px;  }
+a.btn-info:hover { background-color: #333; color: #fff; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+@media (max-width: 768px) {
+.header-pane .what-is-jazmine p, .header-pane .sign-up h2, .header-pane .pricing p, .header-pane .how-it-works .textWrap, .header-pane .easy-entry-series-sign-up p {width: 100%}	
+}
+@media (max-width: 500px) {
+/*.header-pane .login-wrap {width: 100%;}*/
+.woocommerce-account .mainContent .woocommerce {width: 100%;}
+}
+
+.commentbox { width:100%; height:120px; }
+.dart img,
+.dart iframe { max-width:100%; }
+
+#ControlBar { height:53px !important; }
+#mdMemberList > li  { height: auto; padding:10px; }
+
+
+
+
+@media (min-width:600px) {
+
+}
+@media (min-width:768px) {
+	.header .logo img {margin: -20px 0 0 0;}
+}
+@media (min-width:992px) {
+
+}
+@media (min-width:1200px) {
+
+}
